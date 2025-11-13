@@ -14,7 +14,7 @@ I combined MySQL, Python (Prophet + ARIMA), and Power BI to uncover patterns, vo
 🎥 Project Demo
 
 🎬 Watch the Dashboard Walkthrough (1:27 min)
-"C:\Users\pavan\Videos\Screen Recordings\Screen Recording 2025-11-13 111950.mp4"
+
 
 | Category              | Tools / Technologies                                  |
 | --------------------- | ----------------------------------------------------- |
