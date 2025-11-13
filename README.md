@@ -14,6 +14,7 @@ I combined MySQL, Python (Prophet + ARIMA), and Power BI to uncover patterns, vo
 🎥 Project Demo
 
 🎬 Watch the Dashboard Walkthrough (1:27 min)
+DEMO VIDEO
 
 
 | Category              | Tools / Technologies                                  |
@@ -125,8 +126,129 @@ Stored in arima_forecast_all_companies.csv
 | **Start Date / End Date**     | `MIN(stock_price_daily[date]) / MAX(stock_price_daily[date])`                                                 |
 
 
+🧩 Power BI Data Model
+
+📸 Data Model Overview[SCREENSHOTS "C:\Users\pavan\Desktop\stock_project\SCREENSHOTS\Screenshot 2025-11-13 124515.png"]
+
+📊 Power BI Dashboards
+🧩 Dashboard 1 – Market Trend Overview
+
+Goal: Analyze overall market performance and sector averages.
+
+Visuals:
+
+KPIs: Total Companies, Trading Volume, Highest/Lowest Close
+
+Line Chart: Close Price Trend (2019–2024)
+
+Area Chart: Volume Trend
+
+Bar Chart: Sector-wise Average Closing Price
+
+📸 Dashboard Preview[SCREENSHOTS "C:\Users\pavan\Desktop\stock_project\SCREENSHOTS\Screenshot 2025-11-13 112648.png"]
+
+🧠 Insight: Automobile sector led with the highest average close prices and consistent upward movement.
+
+
+.
+
+📈 Dashboard 2 – Company Performance & Comparative Analysis
+
+Goal: Deep-dive into individual company metrics & performance comparison.
+
+Visuals:
+
+Avg Daily Volume (Clustered Bar Chart)
+
+Top 5 Companies by Growth %
+
+Multi-line Close Price Trend
+
+Price Volatility Chart
+
+📸 Dashboard Preview[SCREENSHOTS "C:\Users\pavan\Desktop\stock_project\SCREENSHOTS\Screenshot 2025-11-13 112717.png"]
+
+🧠 Insight: Tata Motors & ICICI Bank showed strong growth; Infosys displayed stable, consistent performance.
 
 
 
+🤖 Dashboard 3 – Technical & Predictive Analysis
 
+Goal: Combine forecasting & technical indicators for actionable insights.
+
+Visuals:
+
+Prophet Forecasted Close Price (365 Days Ahead)
+
+Buy/Sell Recommendation Summary (SMA, EMA, RSI, MACD)
+
+Price Volatility by Sector
+
+Expected Growth % KPI
+
+📸 Dashboard Preview[SCREENSHOT "C:\Users\pavan\Desktop\stock_project\SCREENSHOTS\Screenshot 2025-11-13 113059.png"]
+
+🧠 Insight: Maruti Suzuki exhibits ~138% expected growth, supported by multiple bullish crossover indicators.
+
+📈 Key Insights Summary
+| Category                    | Key Finding                           |
+| --------------------------- | ------------------------------------- |
+| 🏆 Top Growing Company      | Maruti Suzuki (+138% expected growth) |
+| ⚙️ Most Volatile Stock      | Tata Motors                           |
+| 💼 Best Performing Sector   | Automobile                            |
+| 📉 Forecast Accuracy (MAPE) | ~8–12%                                |
+| 📊 Overall Market Outlook   | Bullish (Positive MACD Crossovers)    |
+
+
+💭 What I Learned
+
+This project strengthened my understanding of:
+
+Data modeling and relational database design in MySQL
+
+Forecasting with Prophet & ARIMA
+
+Data visualization and storytelling with Power BI
+
+DAX calculations for financial performance analytics
+
+It taught me how to bridge raw data with predictive insights, mirroring a real-world financial analytics workflow.
+
+
+📂 Folder Structure
+
+STOCK_PROJECT/
+│
+├── dataset/
+│   ├── BAJAJ_FINANCE.csv
+│   ├── HDFC_BANK.csv
+│   └── ...
+│
+├── prophet_forecasts/
+│   ├── Bajaj_Finance_forecast.png
+│   ├── Maruti_Suzuki_forecast.png
+│   └── ...
+│
+├── arima_forecast_all_companies.csv
+├── prophet_forecast_all_companies.csv
+├── merged_stock_data.csv
+├── forecast_prophet.py
+├── forecast_arima.py
+├── merge_stock_data.py
+├── load_to_mysql.py
+├── Queries.sql
+├── Schema.sql
+└── Indian_Stock_Market_Analysis.pbix
+
+
+👨‍💻 Author
+
+Pavan Kumar Reddy
+💼 Aspiring Data Analyst | Python | SQL | Power BI | ML | Time Series
+📧 [gudurupavanpavankumarreddy@gmail.com]
+]
+🔗 [https://www.linkedin.com/in/pavankumar0415/] | [https://github.com/Gudurupavankumarreddy]
+
+🏷️ Tags
+#PowerBI #SQL #Python #Prophet #ARIMA #DataAnalytics #MachineLearning #Forecasting #StockMarket #FinancialAnalysis
 
